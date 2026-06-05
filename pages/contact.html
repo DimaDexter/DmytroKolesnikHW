@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Контакти - Дмитро Колесник</title>
+</head>
+<body>
+
+    <table width="100%" border="0">
+        <tr>
+            <td align="center" bgcolor="#f0f0f0">
+                <h1 id="page-title">📞 Мої контакти</h1>
+                <p><em>Зв'яжіться зі мною — буду радий спілкуванню!</em></p>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Навігація -->
+    <table width="100%" border="1" bgcolor="#e0e0e0">
+        <tr>
+            <td align="center"><a href="../index.html">🏠 Головна</a></td>
+            <td align="center"><a href="contact.html">📞 Контакти</a></td>
+            <td align="center"><a href="gallery.html">🖼️ Галерея</a></td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table width="80%" align="center" border="0">
+        <tr>
+            <td valign="top">
+                <h2 class="contact-header">📌 Особиста інформація</h2>
+                <ul id="personal-info">
+                    <li><strong>Ім'я:</strong> Дмитро Колесник</li>
+                    <li><strong>Місто:</strong> Київ, Україна</li>
+                    <li><strong>Email:</strong> <a href="mailto:dmytro.kolesnik@example.com">dmytro.kolesnik@example.com</a></li>
+                    <li><strong>GitHub:</strong> <a href="https://github.com/DimaDexter" target="_blank">DimaDexter</a></li>
+                    <li><strong>Telegram:</strong> @dmytro_kolesnik</li>
+                    <li><strong>LinkedIn:</strong> <a href="#">linkedin.com/in/dmytro-kolesnik</a></li>
+                </ul>
+
+                <h2 class="contact-header">📝 Написати мені</h2>
+                <form id="contact-form" method="get">
+                    <table border="1" cellpadding="8" bgcolor="#f9f9f9">
+                        <tr>
+                            <td><label for="name">Ваше ім'я:</label></td>
+                            <td><input type="text" id="name" name="name" placeholder="Введіть ім'я" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email">Ваш email:</label></td>
+                            <td><input type="email" id="email" name="email" placeholder="example@mail.com" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="topic">Тема:</label></td>
+                            <td>
+                                <select id="topic" name="topic">
+                                    <option value="job">Пропозиція роботи</option>
+                                    <option value="project">Співпраця над проєктом</option>
+                                    <option value="question">Питання</option>
+                                    <option value="other">Інше</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top"><label for="message">Повідомлення:</label></td>
+                            <td><textarea id="message" name="message" rows="5" cols="35" placeholder="Ваше повідомлення..."></textarea></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="center">
+                                <button type="submit" id="submit-btn">✉️ Надіслати</button>
+                                <button type="reset">🗑️ Очистити</button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </td>
+
+            <!-- Бокова колонка з контактами -->
+            <td width="200" valign="top" bgcolor="#f0f0f0">
+                <h3 class="sidebar-title">🔗 Швидкі контакти</h3>
+                <ul id="quick-contacts">
+                    <li><a href="tel:+380987654321">📱 +380 98 765 4321</a></li>
+                    <li><a href="mailto:dmytro.kolesnik@example.com">📧 Написати email</a></li>
+                    <li><a href="https://t.me/dmytro_kolesnik" target="_blank">💬 Telegram</a></li>
+                </ul>
+                <br>
+                <img src="../photo/contact-icon.jpg" alt="Contact" width="150">
+            </td>
+        </tr>
+    </table>
+
+    <br>
+    <table width="100%" border="0" bgcolor="#f0f0f0">
+        <tr>
+            <td align="center">
+                <a href="#page-title">⬆️ Вгору</a> | <a href="../index.html">🏠 Головна</a>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
