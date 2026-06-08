@@ -6,30 +6,20 @@
 </head>
 <body>
 
-    <table width="100%" border="0">
-        <tr>
-            <td align="center" bgcolor="#f0f0f0">
-                <h1 id="gallery-title">🖼️ Моя галерея</h1>
-                <p><em>Тут зібрані мої улюблені зображення</em></p>
-            </td>
-        </tr>
-    </table>
+    <h1>🖼️ Моя галерея</h1>
+    <p><em>Тут зібрані мої улюблені зображення</em></p>
 
-    <!-- Навігація -->
-    <table width="100%" border="1" bgcolor="#e0e0e0">
-        <tr>
-            <td align="center"><a href="../index.html">🏠 Головна</a></td>
-            <td align="center"><a href="contact.html">📞 Контакти</a></td>
-            <td align="center"><a href="gallery.html">🖼️ Галерея</a></td>
-        </tr>
-    </table>
+    <p>
+        <a href="../index.html">🏠 Головна</a> |
+        <a href="contact.html">📞 Контакти</a> |
+        <a href="gallery.html">🖼️ Галерея</a>
+    </p>
 
-    <br>
+    <hr>
 
-    <h2 class="gallery-subtitle">⭐ Улюблені фото</h2>
+    <h2>⭐ Улюблені фото</h2>
 
-    <!-- Галерея у вигляді таблиці -->
-    <table align="center" border="1" cellpadding="10" cellspacing="0" bgcolor="#fafafa">
+    <table>
         <thead>
             <tr>
                 <th>№</th>
@@ -39,62 +29,92 @@
             </tr>
         </thead>
         <tbody>
-            <tr id="photo1">
-                <td align="center">1</td>
-                <td align="center"><img src="../photo/image1.jpg" alt="Фото 1" width="150" height="150"></td>
+            <tr>
+                <td>1</td>
+                <td><img src="../photo/image1.jpg" alt="Фото 1"></td>
                 <td><strong>Моє фото</strong></td>
                 <td>Це фото зроблено під час навчання на курсі QA Manual</td>
             </tr>
-            <tr id="photo2">
-                <td align="center">2</td>
-                <td align="center"><img src="../photo/image2.jpg" alt="Фото 2" width="150" height="150"></td>
+            <tr>
+                <td>2</td>
+                <td><img src="../photo/image2.jpg" alt="Фото 2"></td>
                 <td><strong>Мій робочий простір</strong></td>
                 <td>Тут я вивчаю тестування та програмування</td>
             </tr>
-            <tr id="photo3">
-                <td align="center">3</td>
-                <td align="center"><img src="../photo/image3.jpg" alt="Фото 3" width="150" height="150"></td>
+            <tr>
+                <td>3</td>
+                <td><img src="../photo/image3.jpg" alt="Фото 3"></td>
                 <td><strong>Сертифікат</strong></td>
                 <td>Моя перша сертифікація з тестування</td>
             </tr>
-            <tr id="photo4">
-                <td align="center">4</td>
-                <td align="center"><img src="../photo/my-team.jpg" alt="Фото 4" width="150" height="150"></td>
+            <tr>
+                <td>4</td>
+                <td><img src="../photo/my-team.jpg" alt="Фото 4"></td>
                 <td><strong>Моя команда</strong></td>
                 <td>Разом ми досягаємо великих цілей</td>
             </tr>
         </tbody>
         <tfoot>
-            <tr bgcolor="#dddddd">
-                <td colspan="4" align="center">Всього фото: 4 🖼️</td>
+            <tr>
+                <td colspan="4">Всього фото: 4 🖼️</td>
             </tr>
         </tfoot>
     </table>
 
-    <br>
-
-    <!-- Список улюблених тем -->
-    <h2 class="gallery-subtitle">📷 Улюблені теми для фото</h2>
-    <ul id="favorite-themes">
+    <h2>📷 Улюблені теми для фото</h2>
+    <ul>
         <li>Природа та пейзажі</li>
         <li>Архітектура</li>
         <li>Подорожі</li>
         <li>Технології</li>
     </ul>
 
-    <br>
-    <a href="#gallery-title">⬆️ Вгору</a>
+    <h2>📸 Оцініть галерею</h2>
 
-    <br><br>
+    <h3>Як вам підбірка фото?</h3>
+    <p>
+        <input type="radio" name="rating" value="5"> 🌟🌟🌟🌟🌟 Дуже подобається<br>
+        <input type="radio" name="rating" value="4"> 🌟🌟🌟🌟 Подобається<br>
+        <input type="radio" name="rating" value="3"> 🌟🌟🌟 Нормально<br>
+        <input type="radio" name="rating" value="2"> 🌟🌟 Не дуже<br>
+        <input type="radio" name="rating" value="1"> 🌟 Жахливо
+    </p>
 
-    <!-- Підвал -->
-    <table width="100%" border="0" bgcolor="#f0f0f0">
-        <tr>
-            <td align="center">
-                <p>© 2026 Галерея Дмитра Колесника</p>
-            </td>
-        </tr>
-    </table>
+    <h3>Які теми ви хотіли б бачити ще?</h3>
+    <p>
+        <input type="checkbox" name="more_themes" value="nature"> Природа<br>
+        <input type="checkbox" name="more_themes" value="architecture"> Архітектура<br>
+        <input type="checkbox" name="more_themes" value="travel"> Подорожі<br>
+        <input type="checkbox" name="more_themes" value="technology"> Технології<br>
+        <input type="checkbox" name="more_themes" value="people"> Люди<br>
+        <input type="checkbox" name="more_themes" value="animals"> Тварини
+    </p>
+
+    <h3>Чи рекомендували б цю галерею друзям?</h3>
+    <p>
+        <input type="radio" name="recommend" value="yes"> Так, обов'язково<br>
+        <input type="radio" name="recommend" value="maybe"> Можливо<br>
+        <input type="radio" name="recommend" value="no"> Ні
+    </p>
+
+    <h3>Який формат перегляду вам зручніший?</h3>
+    <p>
+        <input type="radio" name="view_format" value="table"> Таблиця (як зараз)<br>
+        <input type="radio" name="view_format" value="grid"> Сітка<br>
+        <input type="radio" name="view_format" value="slideshow"> Слайд-шоу
+    </p>
+
+    <h2>🎬 Відео-галерея</h2>
+    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Відео для галереї"></iframe>
+
+    <h2>🌍 Місце для натхнення</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21170.80326709746!2d34.97348633906228!3d48.462208991289556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe303fd048d1d%3A0x7e1c0cc82ccd77f1!2z0JTQvdGW0L_RgNC-0L8sINCU0L3RltC_0YDQvtC_0LXRgtGA0L7QstGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCDQo9C60YDQsNGX0L3QsA!5e0!3m2!1suk!2sua!4v1710000000000!5m2!1suk!2sua" title="Карта Дніпра"></iframe>
+
+    <p><a href="#">⬆️ Вгору</a></p>
+
+    <hr>
+
+    <p>© 2026 Галерея Дмитра Колесника</p>
 
 </body>
 </html>
