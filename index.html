@@ -3,115 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <title>Про мене - Дмитро Колесник</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+<!-- АНІМАЦІЯ ПРИВІТАННЯ ПЕРЕД ЗАВАНТАЖЕННЯМ -->
+<div class="preloader" id="preloader">
+    <div class="welcome-card">
+        <div class="emoji">🚀</div>
+        <h2>Дмитро Колесник</h2>
+        <p>вітає тебе!</p>
+        <div class="emoji">🎉✨💻</div>
+    </div>
+</div>
+
+<div class="container" id="top-container">
     <h1>Вітаю! Я — Дмитро Колесник</h1>
-    <p><em>майбутній QA інженер та тестувальник</em></p>
+    <p class="subtitle"><em>майбутній QA інженер та тестувальник</em></p>
 
-    <p>
-        <a href="index.html">🏠 Головна</a> |
-        <a href="pages/contact.html">📞 Контакти</a> |
-        <a href="pages/gallery.html">🖼️ Галерея</a>
-    </p>
-
-    <hr>
-
-    <h2>📌 Коротка інформація</h2>
-    <p>
-        <img src="photo/my-photo.jpg" alt="Моє фото">
-        <br><strong>Дмитро Колесник</strong>
-    </p>
-    <p>Мене звати <strong>Дмитро Колесник</strong>. Я студент курсу <em>«QA Manual with AI»</em>.</p>
-    <p>Моя мета — стати <strong>висококваліфікованим QA-інженером</strong> та забезпечувати якість програмних продуктів.</p>
-
-    <h2>🧠 Мої навички</h2>
-    <ul>
-        <li>Уважність до деталей</li>
-        <li>Аналітичне мислення</li>
-        <li>Робота в команді</li>
-        <li>Базові знання HTML, Git, GitHub</li>
-        <li>Розуміння життєвого циклу ПЗ (SDLC)</li>
-    </ul>
-
-    <h2>📊 Мої знання</h2>
-    <table border="1">
-        <tr>
-            <th>Тема</th>
-            <th>Рівень</th>
-            <th>Досвід (місяців)</th>
-        </tr>
-        <tr>
-            <td>Тестування ПЗ</td>
-            <td>Середній</td>
-            <td>6</td>
-        </tr>
-        <tr>
-            <td>HTML/CSS</td>
-            <td>Початковий</td>
-            <td>3</td>
-        </tr>
-        <tr>
-            <td>Git/GitHub</td>
-            <td>Середній</td>
-            <td>4</td>
-        </tr>
-    </table>
-
-    <h2>🎯 Моя мета на 2026 рік</h2>
-    <ol>
-        <li>Отримати сертифікацію ISTQB</li>
-        <li>Вивчити автоматизацію тестування</li>
-        <li>Знайти роботу QA інженером</li>
-    </ol>
-
-    <h2>📋 Опитування</h2>
-
-    <h3>Який напрямок QA вам найцікавіший?</h3>
-    <p>
-        <input type="radio" name="qa_direction" value="manual"> Manual QA<br>
-        <input type="radio" name="qa_direction" value="automation"> Automation QA<br>
-        <input type="radio" name="qa_direction" value="performance"> Performance QA<br>
-        <input type="radio" name="qa_direction" value="security"> Security QA
-    </p>
-
-    <h3>Які інструменти ви використовуєте?</h3>
-    <p>
-        <input type="checkbox" name="tools" value="jira"> Jira<br>
-        <input type="checkbox" name="tools" value="selenium"> Selenium<br>
-        <input type="checkbox" name="tools" value="postman"> Postman<br>
-        <input type="checkbox" name="tools" value="git"> Git<br>
-        <input type="checkbox" name="tools" value="testrail"> TestRail
-    </p>
-
-    <h3>Досвід роботи в IT</h3>
-    <p>
-        <input type="radio" name="experience" value="0"> Немає досвіду<br>
-        <input type="radio" name="experience" value="1"> Менше 1 року<br>
-        <input type="radio" name="experience" value="1-3"> 1-3 роки<br>
-        <input type="radio" name="experience" value="3+"> Більше 3 років
-    </p>
-
-    <h3>Технології, які вивчаю (можна обрати кілька)</h3>
-    <p>
-        <input type="checkbox" name="studying" value="html"> HTML<br>
-        <input type="checkbox" name="studying" value="css"> CSS<br>
-        <input type="checkbox" name="studying" value="javascript"> JavaScript<br>
-        <input type="checkbox" name="studying" value="python"> Python<br>
-        <input type="checkbox" name="studying" value="sql"> SQL
-    </p>
-
-    <h2>🎥 Корисне відео про QA</h2>
-    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video"></iframe>
-
-    <h2>🗺️ Де я навчаюсь (Дніпро)</h2>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21170.80326709746!2d34.97348633906228!3d48.462208991289556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe303fd048d1d%3A0x7e1c0cc82ccd77f1!2z0JTQvdGW0L_RgNC-0L8sINCU0L3RltC_0YDQvtC0LXRgtGA0L7QstGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCDQo9C60YDQsNGX0L3QsA!5e0!3m2!1suk!2sua!4v1710000000000!5m2!1suk!2sua" title="Карта Дніпра"></iframe>
-
-    <p><a href="#">⬆️ Вгору</a></p>
+    <div class="nav-menu" id="main-nav">
+        <a href="index.html" class="nav-link">🏠 Головна</a>
+        <a href="pages/contact.html" class="nav-link">📞 Контакти</a>
+        <a href="pages/gallery.html" class="nav-link">🖼️ Галерея</a>
+    </div>
 
     <hr>
 
-    <p>© 2026 Дмитро Колесник. Всі права захищено.</p>
+    <div class="section" id="info-section">
+        <h2>📌 Коротка інформація</h2>
+        <div class="profile-wrapper">
+            <img src="photo/my-photo.jpg" alt="Моє фото" class="profile-img" id="main-photo">
+            <p class="profile-name"><strong>Дмитро Колесник</strong></p>
+        </div>
+        <p id="bio-text">Мене звати <strong>Дмитро Колесник</strong>. Я студент курсу <em>«QA Manual with AI»</em>.</p>
+        <p id="goal-text">Моя мета — стати <strong>висококваліфікованим QA-інженером</strong> та забезпечувати якість програмних продуктів.</p>
+    </div>
+
+    <div class="section" id="skills-section">
+        <h2>🧠 Мої навички</h2>
+        <ul id="skills-list" class="skills-list">
+            <li class="skill-item">Уважність до деталей</li>
+            <li class="skill-item">Аналітичне мислення</li>
+            <li class="skill-item">Робота в команді</li>
+            <li class="skill-item">Базові знання HTML, Git, GitHub</li>
+            <li class="skill-item">Розуміння життєвого циклу ПЗ (SDLC)</li>
+        </ul>
+    </div>
+
+    <div class="section" id="knowledge-section">
+        <h2>📊 Мої знання</h2>
+        <table class="skills-table" id="knowledge-table">
+            <thead>
+                <tr>
+                    <th>Тема</th>
+                    <th>Рівень</th>
+                    <th>Досвід (місяців)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="table-row">
+                    <td>Тестування ПЗ</td>
+                    <td>Середній</td>
+                    <td>6</td>
+                </tr>
+                <tr class="table-row">
+                    <td>HTML/CSS</td>
+                    <td>Початковий</td>
+                    <td>3</td>
+                </tr>
+                <tr class="table-row">
+                    <td>Git/GitHub</td>
+                    <td>Середній</td>
+                    <td>4</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="section" id="goals-section">
+        <h2>🎯 Моя мета на 2026 рік</h2>
+        <ol id="goals-list" class="goals-list">
+            <li class="goal-item">Отримати сертифікацію ISTQB</li>
+            <li class="goal-item">Вивчити автоматизацію тестування</li>
+            <li class="goal-item">Знайти роботу QA інженером</li>
+        </ol>
+    </div>
+
+    <div class="section" id="survey-section">
+        <h2>📋 Опитування</h2>
+
+        <div class="form-group" id="qa-direction-group">
+            <h3>Який напрямок QA вам найцікавіший?</h3>
+            <div class="radio-group">
+                <input type="radio" name="qa_direction" value="manual" id="dir-manual"> <label for="dir-manual">Manual QA</label><br>
+                <input type="radio" name="qa_direction" value="automation" id="dir-auto"> <label for="dir-auto">Automation QA</label><br>
+                <input type="radio" name="qa_direction" value="performance" id="dir-perf"> <label for="dir-perf">Performance QA</label><br>
+                <input type="radio" name="qa_direction" value="security" id="dir-sec"> <label for="dir-sec">Security QA</label>
+            </div>
+        </div>
+
+        <div class="form-group" id="tools-group">
+            <h3>Які інструменти ви використовуєте?</h3>
+            <div class="checkbox-group">
+                <input type="checkbox" name="tools" value="jira" id="tool-jira"> <label for="tool-jira">Jira</label><br>
+                <input type="checkbox" name="tools" value="selenium" id="tool-selenium"> <label for="tool-selenium">Selenium</label><br>
+                <input type="checkbox" name="tools" value="postman" id="tool-postman"> <label for="tool-postman">Postman</label><br>
+                <input type="checkbox" name="tools" value="git" id="tool-git"> <label for="tool-git">Git</label><br>
+                <input type="checkbox" name="tools" value="testrail" id="tool-testrail"> <label for="tool-testrail">TestRail</label>
+            </div>
+        </div>
+
+        <div class="form-group" id="experience-group">
+            <h3>Досвід роботи в IT</h3>
+            <div class="radio-group">
+                <input type="radio" name="experience" value="0" id="exp-0"> <label for="exp-0">Немає досвіду</label><br>
+                <input type="radio" name="experience" value="1" id="exp-1"> <label for="exp-1">Менше 1 року</label><br>
+                <input type="radio" name="experience" value="1-3" id="exp-1-3"> <label for="exp-1-3">1-3 роки</label><br>
+                <input type="radio" name="experience" value="3+" id="exp-3"> <label for="exp-3">Більше 3 років</label>
+            </div>
+        </div>
+
+        <div class="form-group" id="studying-group">
+            <h3>Технології, які вивчаю (можна обрати кілька)</h3>
+            <div class="checkbox-group">
+                <input type="checkbox" name="studying" value="html" id="study-html"> <label for="study-html">HTML</label><br>
+                <input type="checkbox" name="studying" value="css" id="study-css"> <label for="study-css">CSS</label><br>
+                <input type="checkbox" name="studying" value="javascript" id="study-js"> <label for="study-js">JavaScript</label><br>
+                <input type="checkbox" name="studying" value="python" id="study-python"> <label for="study-python">Python</label><br>
+                <input type="checkbox" name="studying" value="sql" id="study-sql"> <label for="study-sql">SQL</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="media-section">
+        <h2>🎥 Корисне відео про QA</h2>
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <h2>🗺️ Де я навчаюсь (Дніпро)</h2>
+        <div class="map-wrapper">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21170.80326709746!2d34.97348633906228!3d48.462208991289556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe303fd048d1d%3A0x7e1c0cc82ccd77f1!2z0JTQvdGW0L_RgNC-0L8sINCU0L3RltC_0YDQvtC_0LXRgtGA0L7QstGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCDQo9C60YDQsNGX0L3QsA!5e0!3m2!1suk!2sua!4v1710000000000!5m2!1suk!2sua" title="Карта Дніпра" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <a href="#top-container" class="btn-up" id="up-button">⬆️ Вгору</a>
+
+    <div class="footer" id="main-footer">
+        <p>© 2026 Дмитро Колесник. Всі права захищено.</p>
+    </div>
+</div>
+
+<script>
+    // Автоматичне приховування прелоадера (на всяк випадок)
+    setTimeout(function() {
+        var preloader = document.getElementById('preloader');
+        if (preloader) {
+            preloader.style.display = 'none';
+        }
+    }, 3600);
+</script>
 
 </body>
 </html>

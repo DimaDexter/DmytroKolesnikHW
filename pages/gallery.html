@@ -3,118 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <title>Галерея - Дмитро Колесник</title>
+    <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
 
+<div class="preloader" id="preloader">
+    <div class="welcome-card">
+        <div class="emoji">🖼️</div>
+        <h2>Дмитро Колесник</h2>
+        <p>запрошує в галерею!</p>
+        <div class="emoji">🎨✨📸</div>
+    </div>
+</div>
+
+<div class="container" id="gallery-container">
     <h1>🖼️ Моя галерея</h1>
-    <p><em>Тут зібрані мої улюблені зображення</em></p>
+    <p class="subtitle"><em>Тут зібрані мої улюблені зображення</em></p>
 
-    <p>
-        <a href="../index.html">🏠 Головна</a> |
-        <a href="contact.html">📞 Контакти</a> |
-        <a href="gallery.html">🖼️ Галерея</a>
-    </p>
-
-    <hr>
-
-    <h2>⭐ Улюблені фото</h2>
-
-    <table>
-        <thead>
-            <tr>
-                <th>№</th>
-                <th>Зображення</th>
-                <th>Назва</th>
-                <th>Опис</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td><img src="../photo/image1.jpg" alt="Фото 1"></td>
-                <td><strong>Моє фото</strong></td>
-                <td>Це фото зроблено під час навчання на курсі QA Manual</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td><img src="../photo/image2.jpg" alt="Фото 2"></td>
-                <td><strong>Мій робочий простір</strong></td>
-                <td>Тут я вивчаю тестування та програмування</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td><img src="../photo/image3.jpg" alt="Фото 3"></td>
-                <td><strong>Сертифікат</strong></td>
-                <td>Моя перша сертифікація з тестування</td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td><img src="../photo/my-team.jpg" alt="Фото 4"></td>
-                <td><strong>Моя команда</strong></td>
-                <td>Разом ми досягаємо великих цілей</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <td colspan="4">Всього фото: 4 🖼️</td>
-            </tr>
-        </tfoot>
-    </table>
-
-    <h2>📷 Улюблені теми для фото</h2>
-    <ul>
-        <li>Природа та пейзажі</li>
-        <li>Архітектура</li>
-        <li>Подорожі</li>
-        <li>Технології</li>
-    </ul>
-
-    <h2>📸 Оцініть галерею</h2>
-
-    <h3>Як вам підбірка фото?</h3>
-    <p>
-        <input type="radio" name="rating" value="5"> 🌟🌟🌟🌟🌟 Дуже подобається<br>
-        <input type="radio" name="rating" value="4"> 🌟🌟🌟🌟 Подобається<br>
-        <input type="radio" name="rating" value="3"> 🌟🌟🌟 Нормально<br>
-        <input type="radio" name="rating" value="2"> 🌟🌟 Не дуже<br>
-        <input type="radio" name="rating" value="1"> 🌟 Жахливо
-    </p>
-
-    <h3>Які теми ви хотіли б бачити ще?</h3>
-    <p>
-        <input type="checkbox" name="more_themes" value="nature"> Природа<br>
-        <input type="checkbox" name="more_themes" value="architecture"> Архітектура<br>
-        <input type="checkbox" name="more_themes" value="travel"> Подорожі<br>
-        <input type="checkbox" name="more_themes" value="technology"> Технології<br>
-        <input type="checkbox" name="more_themes" value="people"> Люди<br>
-        <input type="checkbox" name="more_themes" value="animals"> Тварини
-    </p>
-
-    <h3>Чи рекомендували б цю галерею друзям?</h3>
-    <p>
-        <input type="radio" name="recommend" value="yes"> Так, обов'язково<br>
-        <input type="radio" name="recommend" value="maybe"> Можливо<br>
-        <input type="radio" name="recommend" value="no"> Ні
-    </p>
-
-    <h3>Який формат перегляду вам зручніший?</h3>
-    <p>
-        <input type="radio" name="view_format" value="table"> Таблиця (як зараз)<br>
-        <input type="radio" name="view_format" value="grid"> Сітка<br>
-        <input type="radio" name="view_format" value="slideshow"> Слайд-шоу
-    </p>
-
-    <h2>🎬 Відео-галерея</h2>
-    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Відео для галереї"></iframe>
-
-    <h2>🌍 Місце для натхнення</h2>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21170.80326709746!2d34.97348633906228!3d48.462208991289556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe303fd048d1d%3A0x7e1c0cc82ccd77f1!2z0JTQvdGW0L_RgNC-0L8sINCU0L3RltC_0YDQvtC_0LXRgtGA0L7QstGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCDQo9C60YDQsNGX0L3QsA!5e0!3m2!1suk!2sua!4v1710000000000!5m2!1suk!2sua" title="Карта Дніпра"></iframe>
-
-    <p><a href="#">⬆️ Вгору</a></p>
+    <div class="nav-menu" id="gallery-nav">
+        <a href="../index.html" class="nav-link">🏠 Головна</a>
+        <a href="contact.html" class="nav-link">📞 Контакти</a>
+        <a href="gallery.html" class="nav-link">🖼️ Галерея</a>
+    </div>
 
     <hr>
 
-    <p>© 2026 Галерея Дмитра Колесника</p>
+    <div class="section" id="gallery-section">
+        <h2>⭐ Улюблені фото</h2>
+
+        <table class="gallery-table" id="photos-table">
+            <thead>
+                <tr>
+                    <th>№</th>
+                    <th>Зображення</th>
+                    <th>Назва</th>
+                    <th>Опис</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="photo1" class="photo-row">
+                    <td align="center">1</td>
+                    <td align="center"><img src="../photo/image1.jpg" alt="Фото 1" class="gallery-img"></td>
+                    <td><strong>Моє фото</strong></td>
+                    <td>Це фото зроблено під час навчання на курсі QA Manual</td>
+                </tr>
+                <tr id="photo2" class="photo-row">
+                    <td align="center">2</td>
+                    <td align="center"><img src="../photo/image2.jpg" alt="Фото 2" class="gallery-img"></td>
+                    <td><strong>Мій робочий простір</strong></td>
+                    <td>Тут я вивчаю тестування та програмування</td>
+                </tr>
+                <tr id="photo3" class="photo-row">
+                    <td align="center">3</td>
+                    <td align="center"><img src="../photo/image3.jpg" alt="Фото 3" class="gallery-img"></td>
+                    <td><strong>Сертифікат</strong></td>
+                    <td>Моя перша сертифікація з тестування</td>
+                </tr>
+                <tr id="photo4" class="photo-row">
+                    <td align="center">4</td>
+                    <td align="center"><img src="../photo/my-team.jpg" alt="Фото 4" class="gallery-img"></td>
+                    <td><strong>Моя команда</strong></td>
+                    <td>Разом ми досягаємо великих цілей</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr class="table-footer">
+                    <td colspan="4" align="center">Всього фото: 4 🖼️</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <div class="section" id="themes-section">
+        <h2>📷 Улюблені теми для фото</h2>
+        <ul id="favorite-themes" class="themes-list">
+            <li class="theme-item">Природа та пейзажі</li>
+            <li class="theme-item">Архітектура</li>
+            <li class="theme-item">Подорожі</li>
+            <li class="theme-item">Технології</li>
+        </ul>
+    </div>
+
+    <div class="section" id="rating-section">
+        <h2>📸 Оцініть галерею</h2>
+
+        <div class="form-group" id="rating-group">
+            <h3>Як вам підбірка фото?</h3>
+            <div class="radio-group">
+                <input type="radio" name="rating" value="5" id="rate-5"> <label for="rate-5">🌟🌟🌟🌟🌟 Дуже подобається</label><br>
+                <input type="radio" name="rating" value="4" id="rate-4"> <label for="rate-4">🌟🌟🌟🌟 Подобається</label><br>
+                <input type="radio" name="rating" value="3" id="rate-3"> <label for="rate-3">🌟🌟🌟 Нормально</label><br>
+                <input type="radio" name="rating" value="2" id="rate-2"> <label for="rate-2">🌟🌟 Не дуже</label><br>
+                <input type="radio" name="rating" value="1" id="rate-1"> <label for="rate-1">🌟 Жахливо</label>
+            </div>
+        </div>
+
+        <div class="form-group" id="more-themes-group">
+            <h3>Які теми ви хотіли б бачити ще?</h3>
+            <div class="checkbox-group">
+                <input type="checkbox" name="more_themes" value="nature" id="theme-nature"> <label for="theme-nature">Природа</label><br>
+                <input type="checkbox" name="more_themes" value="architecture" id="theme-architecture"> <label for="theme-architecture">Архітектура</label><br>
+                <input type="checkbox" name="more_themes" value="travel" id="theme-travel"> <label for="theme-travel">Подорожі</label><br>
+                <input type="checkbox" name="more_themes" value="technology" id="theme-technology"> <label for="theme-technology">Технології</label><br>
+                <input type="checkbox" name="more_themes" value="people" id="theme-people"> <label for="theme-people">Люди</label><br>
+                <input type="checkbox" name="more_themes" value="animals" id="theme-animals"> <label for="theme-animals">Тварини</label>
+            </div>
+        </div>
+
+        <div class="form-group" id="recommend-group">
+            <h3>Чи рекомендували б цю галерею друзям?</h3>
+            <div class="radio-group">
+                <input type="radio" name="recommend" value="yes" id="rec-yes"> <label for="rec-yes">Так, обов'язково</label><br>
+                <input type="radio" name="recommend" value="maybe" id="rec-maybe"> <label for="rec-maybe">Можливо</label><br>
+                <input type="radio" name="recommend" value="no" id="rec-no"> <label for="rec-no">Ні</label>
+            </div>
+        </div>
+
+        <div class="form-group" id="format-group">
+            <h3>Який формат перегляду вам зручніший?</h3>
+            <div class="radio-group">
+                <input type="radio" name="view_format" value="table" id="format-table"> <label for="format-table">Таблиця (як зараз)</label><br>
+                <input type="radio" name="view_format" value="grid" id="format-grid"> <label for="format-grid">Сітка</label><br>
+                <input type="radio" name="view_format" value="slideshow" id="format-slideshow"> <label for="format-slideshow">Слайд-шоу</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="video-section">
+        <h2>🎬 Відео-галерея</h2>
+        <div class="video-wrapper">
+            <iframe class="gallery-iframe" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Відео для галереї" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <h2>🌍 Місце для натхнення</h2>
+        <div class="map-wrapper">
+            <iframe class="gallery-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21170.80326709746!2d34.97348633906228!3d48.462208991289556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe303fd048d1d%3A0x7e1c0cc82ccd77f1!2z0JTQvdGW0L_RgNC-0L8sINCU0L3RltC_0YDQvtC_0LXRgtGA0L7QstGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCDQo9C60YDQsNGX0L3QsA!5e0!3m2!1suk!2sua!4v1710000000000!5m2!1suk!2sua" title="Карта Дніпра" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <a href="#gallery-container" class="btn-up" id="up-button">⬆️ Вгору</a>
+
+    <div class="footer" id="gallery-footer">
+        <p>© 2026 Галерея Дмитра Колесника</p>
+    </div>
+</div>
+
+<script>
+    setTimeout(function() {
+        var preloader = document.getElementById('preloader');
+        if (preloader) {
+            preloader.style.display = 'none';
+        }
+    }, 3600);
+</script>
 
 </body>
 </html>

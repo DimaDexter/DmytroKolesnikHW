@@ -3,104 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <title>Контакти - Дмитро Колесник</title>
+    <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
 
+<div class="preloader" id="preloader">
+    <div class="welcome-card">
+        <div class="emoji">📞</div>
+        <h2>Дмитро Колесник</h2>
+        <p>зв'яжись зі мною!</p>
+        <div class="emoji">💬✨📱</div>
+    </div>
+</div>
+
+<div class="container" id="contact-container">
     <h1>📞 Мої контакти</h1>
-    <p><em>Зв'яжіться зі мною — буду радий спілкуванню!</em></p>
+    <p class="subtitle"><em>Зв'яжіться зі мною — буду радий спілкуванню!</em></p>
 
-    <p>
-        <a href="../index.html">🏠 Головна</a> |
-        <a href="contact.html">📞 Контакти</a> |
-        <a href="gallery.html">🖼️ Галерея</a>
-    </p>
-
-    <hr>
-
-    <h2>📌 Особиста інформація</h2>
-    <ul>
-        <li><strong>Ім'я:</strong> Дмитро Колесник</li>
-        <li><strong>Місто:</strong> Дніпро, Україна</li>
-        <li><strong>Email:</strong> <a href="mailto:dmytro.kolesnik@example.com">dmytro.kolesnik@example.com</a></li>
-        <li><strong>GitHub:</strong> <a href="https://github.com/DimaDexter" target="_blank">DimaDexter</a></li>
-        <li><strong>Telegram:</strong> @dmytro_kolesnik</li>
-        <li><strong>LinkedIn:</strong> <a href="#">linkedin.com/in/dmytro-kolesnik</a></li>
-    </ul>
-
-    <h2>📝 Написати мені</h2>
-    <form method="get">
-        <p>
-            <label for="name">Ваше ім'я:</label><br>
-            <input type="text" name="name" placeholder="Введіть ім'я" required>
-        </p>
-        <p>
-            <label for="email">Ваш email:</label><br>
-            <input type="email" name="email" placeholder="example@mail.com" required>
-        </p>
-        <p>
-            <label for="topic">Тема:</label><br>
-            <select name="topic">
-                <option value="job">Пропозиція роботи</option>
-                <option value="project">Співпраця над проєктом</option>
-                <option value="question">Питання</option>
-                <option value="other">Інше</option>
-            </select>
-        </p>
-
-        <h3>Як ви дізналися про мене?</h3>
-        <p>
-            <input type="radio" name="how_know" value="github"> GitHub<br>
-            <input type="radio" name="how_know" value="linkedin"> LinkedIn<br>
-            <input type="radio" name="how_know" value="telegram"> Telegram<br>
-            <input type="radio" name="how_know" value="friend"> Порадили друзі<br>
-            <input type="radio" name="how_know" value="other"> Інше
-        </p>
-
-        <h3>З якого приводу ви пишете? (можна обрати кілька)</h3>
-        <p>
-            <input type="checkbox" name="reason" value="job"> Пропозиція роботи<br>
-            <input type="checkbox" name="reason" value="project"> Співпраця над проєктом<br>
-            <input type="checkbox" name="reason" value="question"> Питання<br>
-            <input type="checkbox" name="reason" value="feedback"> Зворотній зв'язок<br>
-            <input type="checkbox" name="reason" value="other"> Інше
-        </p>
-
-        <p>
-            <label for="message">Повідомлення:</label><br>
-            <textarea name="message" rows="5" cols="35" placeholder="Ваше повідомлення..."></textarea>
-        </p>
-
-        <h3>Чи хотіли б отримувати розсилку?</h3>
-        <p>
-            <input type="radio" name="newsletter" value="yes"> Так<br>
-            <input type="radio" name="newsletter" value="no"> Ні<br>
-            <input type="radio" name="newsletter" value="later"> Можливо, пізніше
-        </p>
-
-        <p>
-            <button type="submit">✉️ Надіслати</button>
-            <button type="reset">🗑️ Очистити</button>
-        </p>
-    </form>
-
-    <h3>🔗 Швидкі контакти</h3>
-    <ul>
-        <li><a href="tel:+380987654321">📱 +380 98 765 4321</a></li>
-        <li><a href="mailto:dmytro.kolesnik@example.com">📧 Написати email</a></li>
-        <li><a href="https://t.me/dmytro_kolesnik" target="_blank">💬 Telegram</a></li>
-    </ul>
-
-    <img src="../photo/contact-icon.jpg" alt="Contact">
-
-    <h2>📍 Моє місцезнаходження</h2>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21170.80326709746!2d34.97348633906228!3d48.462208991289556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe303fd048d1d%3A0x7e1c0cc82ccd77f1!2z0JTQvdGW0L_RgNC-0L8sINCU0L3RltC_0YDQvtC_0LXRgtGA0L7QstGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCDQo9C60YDQsNGX0L3QsA!5e0!3m2!1suk!2sua!4v1710000000000!5m2!1suk!2sua" title="Карта Дніпра"></iframe>
-
-    <h2>📺 Мій улюблений канал про QA</h2>
-    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="QA YouTube канал"></iframe>
+    <div class="nav-menu" id="contact-nav">
+        <a href="../index.html" class="nav-link">🏠 Головна</a>
+        <a href="contact.html" class="nav-link">📞 Контакти</a>
+        <a href="gallery.html" class="nav-link">🖼️ Галерея</a>
+    </div>
 
     <hr>
 
-    <p><a href="#">⬆️ Вгору</a> | <a href="../index.html">🏠 Головна</a></p>
+    <div class="section" id="personal-info-section">
+        <h2>📌 Особиста інформація</h2>
+        <ul id="personal-info" class="personal-list">
+            <li><strong>Ім'я:</strong> Дмитро Колесник</li>
+            <li><strong>Місто:</strong> Дніпро, Україна</li>
+            <li><strong>Email:</strong> <a href="mailto:dmytro.kolesnik@example.com">dmytro.kolesnik@example.com</a></li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/DimaDexter" target="_blank">DimaDexter</a></li>
+            <li><strong>Telegram:</strong> @dmytro_kolesnik</li>
+            <li><strong>LinkedIn:</strong> <a href="#">linkedin.com/in/dmytro-kolesnik</a></li>
+        </ul>
+    </div>
+
+    <div class="section" id="contact-form-section">
+        <h2>📝 Написати мені</h2>
+        <form method="get" id="main-form">
+            <div class="form-group">
+                <label for="name">Ваше ім'я:</label>
+                <input type="text" name="name" id="name" placeholder="Введіть ім'я" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Ваш email:</label>
+                <input type="email" name="email" id="email" placeholder="example@mail.com" required>
+            </div>
+            <div class="form-group">
+                <label for="topic">Тема:</label>
+                <select name="topic" id="topic">
+                    <option value="job">Пропозиція роботи</option>
+                    <option value="project">Співпраця над проєктом</option>
+                    <option value="question">Питання</option>
+                    <option value="other">Інше</option>
+                </select>
+            </div>
+
+            <div class="form-group" id="how-know-group">
+                <h3>Як ви дізналися про мене?</h3>
+                <div class="radio-group">
+                    <div><input type="radio" name="how_know" value="github" id="how-github"> <label for="how-github">GitHub</label></div>
+                    <div><input type="radio" name="how_know" value="linkedin" id="how-linkedin"> <label for="how-linkedin">LinkedIn</label></div>
+                    <div><input type="radio" name="how_know" value="telegram" id="how-telegram"> <label for="how-telegram">Telegram</label></div>
+                    <div><input type="radio" name="how_know" value="friend" id="how-friend"> <label for="how-friend">Порадили друзі</label></div>
+                    <div><input type="radio" name="how_know" value="other" id="how-other"> <label for="how-other">Інше</label></div>
+                </div>
+            </div>
+
+            <div class="form-group" id="reason-group">
+                <h3>З якого приводу ви пишете? (можна обрати кілька)</h3>
+                <div class="checkbox-group">
+                    <div><input type="checkbox" name="reason" value="job" id="reason-job"> <label for="reason-job">Пропозиція роботи</label></div>
+                    <div><input type="checkbox" name="reason" value="project" id="reason-project"> <label for="reason-project">Співпраця над проєктом</label></div>
+                    <div><input type="checkbox" name="reason" value="question" id="reason-question"> <label for="reason-question">Питання</label></div>
+                    <div><input type="checkbox" name="reason" value="feedback" id="reason-feedback"> <label for="reason-feedback">Зворотній зв'язок</label></div>
+                    <div><input type="checkbox" name="reason" value="other" id="reason-other"> <label for="reason-other">Інше</label></div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Повідомлення:</label>
+                <textarea name="message" id="message" rows="5" cols="35" placeholder="Ваше повідомлення..."></textarea>
+            </div>
+
+            <div class="form-group" id="newsletter-group">
+                <h3>Чи хотіли б отримувати розсилку?</h3>
+                <div class="radio-group">
+                    <div><input type="radio" name="newsletter" value="yes" id="news-yes"> <label for="news-yes">Так</label></div>
+                    <div><input type="radio" name="newsletter" value="no" id="news-no"> <label for="news-no">Ні</label></div>
+                    <div><input type="radio" name="newsletter" value="later" id="news-later"> <label for="news-later">Можливо, пізніше</label></div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit-btn">✉️ Надіслати</button>
+                <button type="reset" id="reset-btn">🗑️ Очистити</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="sidebar" id="quick-contacts-sidebar">
+        <h3>🔗 Швидкі контакти</h3>
+        <ul id="quick-contacts" class="quick-list">
+            <li><a href="tel:+380987654321">📱 +380 98 765 4321</a></li>
+            <li><a href="mailto:dmytro.kolesnik@example.com">📧 Написати email</a></li>
+            <li><a href="https://t.me/dmytro_kolesnik" target="_blank">💬 Telegram</a></li>
+        </ul>
+    </div>
+
+    <div class="section" id="location-section">
+        <h2>📍 Моє місцезнаходження</h2>
+        <div class="map-wrapper">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21170.80326709746!2d34.97348633906228!3d48.462208991289556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe303fd048d1d%3A0x7e1c0cc82ccd77f1!2z0JTQvdGW0L_RgNC-0L8sINCU0L3RltC_0YDQvtC_0LXRgtGA0L7QstGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCDQo9C60YDQsNGX0L3QsA!5e0!3m2!1suk!2sua!4v1710000000000!5m2!1suk!2sua" title="Карта Дніпра" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <h2>📺 Мій улюблений канал про QA</h2>
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="QA YouTube канал" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <a href="#contact-container" class="btn-up" id="up-button">⬆️ Вгору</a>
+
+    <div class="footer" id="contact-footer">
+        <p>© 2026 Дмитро Колесник. Всі права захищено.</p>
+    </div>
+</div>
+
+<script>
+    setTimeout(function() {
+        var preloader = document.getElementById('preloader');
+        if (preloader) {
+            preloader.style.display = 'none';
+        }
+    }, 3600);
+</script>
 
 </body>
 </html>
